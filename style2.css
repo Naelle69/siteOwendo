@@ -17,8 +17,20 @@ body {
     background-color: #004A7F !important; /* Bleu marin - Principal */
 }
 
+.text-primary-light {
+    color: #E3F2FD !important; /* Bleu marin - Principal */
+}
+
 .text-primary {
     color: #004A7F !important;
+}
+
+.bg-yellow{
+    background-color: #E3F2FD !important;
+}
+
+.text-yellow{  
+    color: #004A7F;
 }
 
 .btn-outline-primary {
@@ -31,28 +43,21 @@ body {
     color: #E3F2FD;
 }
 
-.btn-accent {
-    background-color: #FFD700;
-    color: #1A1A1A;
-    border: none;
+.btn-outline-white {
+    border-color: #E3F2FD;
+    color: #E3F2FD;
 }
 
-.btn-accent:hover {
-    background-color: #e6c200;
-    color: #1A1A1A;
+.btn-outline-white:hover {
+    background-color: #003b66;
+    color: #E3F2FD;
 }
+
 
 .bg-light-blue {
     background-color: #E3F2FD;
 }
 
-.bg-secondary-dark {
-    background-color: #2B5C6D;
-}
-
-.text-secondary-dark {
-    color: #2B5C6D;
-}
 
 .hero {
     background: url('../images/hero.jpg') no-repeat center center/cover;
@@ -86,6 +91,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 
 /* Header */
 /* Hauteur du carrousel = 50% de la hauteur de l'écran */

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Organigramme - Mairie d’Akanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"  rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+  <style>
+    body {
+      background-color: #f9f9f9;
+    }
+
+    h2, h3 {
+      color: #004080;
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
+
+    /* Affichage desktop */
+    .org-container {
+      display: none;
+    }
+
+    @media (min-width: 992px) {
+      .org-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+      }
+
+      .org-line {
+        width: 2px;
+        height: 30px;
+        background: #004080;
+        margin: 0 auto;
+      }
+
+      .org-level {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+
+      .org-box {
+        text-align: center;
+        background: #004080;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        width: 150px;
+      }
+
+      .org-box img {
+        width: 100%;
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .org-branch {
+        border-left: 2px solid #004080;
+        height: 20px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+      }
+
+      /* Nouveautés pour l'alignement et les connexions */
+      .org-maire {
+        position: relative;
+        margin-bottom: 20px;
+      }
+
+      .org-maire::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 50px;
+        background: #004080;
+      }
+
+      .org-adjoints {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto;
+      }
+
+      .org-conseillers {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 1200px;
+        margin: 20px auto;
+      }
+
+      .org-conseillers .org-box {
+        width: 100px; /* Réduire la largeur pour les conseillers */
+      }
+    }
+
+    /* Liste mobile */
+    @media (max-width: 991px) {
+      .org-list li {
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="images/logo.png" alt="Logo Owendo" width="32" class="me-2">
+      Mairie d'Owendo
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="la-commune.html">La Commune</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Démarches</a></li>
+        <li class="nav-item"><a class="nav-link" href="tourisme.html">Tourisme</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-5">
+
+  <!-- Titre principal -->
+  <h1 class="text-center mb-5">L'équipe municipale</h1>
+
+  <!-- Profil du Maire -->
+  <div class="row align-items-center mb-4">
+    <!-- Image du maire -->
+    <div class="col-md-3 text-center mb-3 mb-md-0">
+      <img src="images/Capture d’écran 2025-06-11 144038.png" alt="Photo du Maire" class="rounded-circle img-fluid" style="width: 200px; height: 200px; object-fit: cover;">
+    </div>
+
+    <!-- Informations et Accordéon -->
+    <div class="col-md-9">
+      <h2 class="mb-4">Yvon Patrick ROMBOGOUERA</h2>
+
+      <!-- Accordéon Bootstrap -->
+      <div class="accordion" id="maireAccordion">
+
+        <!-- Biographie -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingBiographie">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBiographie" aria-expanded="false" aria-controls="collapseBiographie">
+              Biographie
+            </button>
+          </h2>
+          <div id="collapseBiographie" class="accordion-collapse collapse" aria-labelledby="headingBiographie" data-bs-parent="#maireAccordion">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+            </div>
+          </div>
+        </div>
+
+        <!-- Parcours scolaire -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingParcoursScolaire">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseParcoursScolaire" aria-expanded="false" aria-controls="collapseParcoursScolaire">
+              Parcours scolaire
+            </button>
+          </h2>
+          <div id="collapseParcoursScolaire" class="accordion-collapse collapse" aria-labelledby="headingParcoursScolaire" data-bs-parent="#maireAccordion">
+            <div class="accordion-body">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+            </div>
+          </div>
+        </div>
+
+        <!-- Parcours professionnel -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingParcoursProfessionnel">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseParcoursProfessionnel" aria-expanded="false" aria-controls="collapseParcoursProfessionnel">
+              Parcours professionnel
+            </button>
+          </h2>
+          <div id="collapseParcoursProfessionnel" class="accordion-collapse collapse" aria-labelledby="headingParcoursProfessionnel" data-bs-parent="#maireAccordion">
+            <div class="accordion-body">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+            </div>
+          </div>
+        </div>
+
+        <!-- Centre d'intérêt -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCentreInteret">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCentreInteret" aria-expanded="false" aria-controls="collapseCentreInteret">
+              Centre d’intérêt
+            </button>
+          </h2>
+          <div id="collapseCentreInteret" class="accordion-collapse collapse" aria-labelledby="headingCentreInteret" data-bs-parent="#maireAccordion">
+            <div class="accordion-body">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Mot du Maire -->
+  <div class="mb-4">
+    <h2 class="fs-4 border-bottom pb-2 mb-3">Le mot du maire</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. 
+      Curabitur in ligula eget nulla luctus malesuada. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.
+    </p>
+    <p>
+      Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+    </p>
+  </div>
+
+  <!-- Signature -->
+  <div class="text-end mt-5">
+    <img src="images/signature.png" alt="Signature du Maire" class="img-fluid" style="max-width: 120px;">
+    <p class="fw-bold mt-2 mb-0">Yvon Patrick ROMBOGOUERA</p>
+  </div>
+
+</div>
+
+<div class="container py-5">
+  <h2 class="text-center mb-5">L’organigramme</h2>
+
+  <!-- Affichage Desktop -->
+  <div class="org-container d-none d-lg-flex">
+    <!-- Maire -->
+    <div class="org-maire org-box">
+      <img src="images/Capture d’écran 2025-06-11 144038.png" alt="Maire">
+      <div><strong>Maire</strong><br>Yvon Patrick<br>ROMBOGOUERA</div>
+    </div>
+
+    <!-- Adjoints -->
+    <div class="org-adjoints">
+      <div class="org-box">
+        <img src="images/Capture d’écran 2025-06-11 144038.png" alt="Adjoint 1">
+        <div>1er Adjoint<br>M. …</div>
+      </div>
+      <div class="org-box">
+        <img src="images/Capture d’écran 2025-06-11 144038.png" alt="Adjoint 2">
+        <div>2ème Adjoint<br>M. …</div>
+      </div>
+      <div class="org-box">
+        <img src="images/Capture d’écran 2025-06-11 144038.png" alt="Adjoint 3">
+        <div>3ème Adjoint<br>M. …</div>
+      </div>
+      <div class="org-box">
+        <img src="images/Capture d’écran 2025-06-11 144038.png" alt="Adjoint 4">
+        <div>4ème Adjoint<br>M. …</div>
+      </div>
+    </div>
+
+    <!-- Conseillers -->
+    <div class="org-conseillers">
+      <div class="org-box">
+        <img src="images/Capture d’écran 2025-06-11 144038.png" alt="Conseiller">
+        <div>Conseiller<br>M. …</div>
+      </div>
+      <div class="org-box">
+        <img src="images/Capture d’écran 2025-06-11 144038.png" alt="Conseiller">
+        <div>Conseiller<br>M. …</div>
+      </div>
+      <div class="org-box">
+        <img src="images/Capture d’écran 2025-06-11 144038.png" alt="Conseiller">
+        <div>Conseiller<br>M. …</div>
+      </div>
+      <div class="org-box">
+        <img src="images/Capture d’écran 2025-06-11 144038.png" alt="Conseiller">
+        <div>Conseiller<br>M. …</div>
+      </div>
+      <div class="org-box">
+        <img src="images/Capture d’écran 2025-06-11 144038.png" alt="Conseiller">
+        <div>Conseiller<br>M. …</div>
+      </div>
+      <div class="org-box">
+        <img src="images/Capture d’écran 2025-06-11 144038.png" alt="Conseiller">
+        <div>Conseiller<br>M. …</div>
+      </div>
+      <div class="org-box">
+        <img src="images/Capture d’écran 2025-06-11 144038.png" alt="Conseiller">
+        <div>Conseiller<br>M. …</div>
+      </div>
+      <div class="org-box">
+        <img src="images/Capture d’écran 2025-06-11 144038.png" alt="Conseiller">
+        <div>Conseiller<br>M. …</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Affichage Mobile -->
+  <div class="d-block d-lg-none mt-4">
+    <ul class="list-group org-list">
+      <li class="list-group-item"><strong>Maire</strong> : Yvon Patrick ROMBOGOUERA</li>
+      <li class="list-group-item">1er Adjoint : M. …</li>
+      <li class="list-group-item">2ème Adjoint : M. …</li>
+      <li class="list-group-item">3ème Adjoint : M. …</li>
+      <li class="list-group-item">4ème Adjoint : M. …</li>
+      <li class="list-group-item">Conseiller municipal : M. …</li>
+      <li class="list-group-item">Conseiller municipal : M. …</li>
+      <!-- Ajouter autant que nécessaire -->
+    </ul>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white p-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 mb-3">
+                <strong>Mairie d'Owendo</strong><br>
+                Avenue de la République<br>
+                Province de l'Estuaire, Gabon<br>
+                Horaires : Lundi à Vendredi - 8h à 17h<br>
+                Téléphone : +241 XX XX XX XX<br>
+                Email : contact@mairieowendo.ga
+            </div>
+            <div class="col-12 col-md-3 mb-3">
+                <strong>Liens utiles</strong><br>
+                <ul class="list-unstyled small">
+                    <li><a href="mentions-legales.html" class="text-white text-decoration-none">Mentions légales</a></li>
+                    <li><a href="plan-site.html" class="text-white text-decoration-none">Plan du site</a></li>
+                    <li><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <strong>Suivez-nous</strong>
+                <div class="d-flex gap-2 fs-5 mb-3">
+                    <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+                <h6 class="small">Rejoignez notre newsletter</h6>
+                <form class="input-group input-group-sm mb-3">
+                    <input type="email" class="form-control" placeholder="Votre email" required>
+                    <button class="btn btn-success" type="submit">S’inscrire</button>
+                </form>
+            </div>
+        </div>
+        <hr class="text-white">
+        <div class="text-center">
+            <p class="small mb-0">&copy; 2025 Mairie d'Owendo – Tous droits réservés</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
