@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mairie d'Owendo - Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"  rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo Owendo" width="40"> Mairie d'Owendo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="la-commune.html">La Commune</a></li>
+                <li class="nav-item"><a class="nav-link" href="demarches.html">Démarches</a></li>
+                <li class="nav-item"><a class="nav-link" href="tourisme.html">Tourisme</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section avec Carousel -->
+<section class="position-relative text-white text-center overflow-hidden" style="height: 50vh;">
+    
+    <div id="heroCarousel" class="carousel slide w-100" data-bs-ride="carousel" style="height: 100%;">
+        
+        <!-- Indicateurs -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Images du carrousel -->
+        <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100">
+                <img src="images/Owendo-Port.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Vue d'Owendo - Port">
+            </div>
+            <div class="carousel-item h-100">
+                <img src="images/hero.jpeg" class="d-block w-100 h-100 object-fit-cover" alt="Marché local">
+            </div>
+            <div class="carousel-item h-100">
+                <img src="images/Bild2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Paysages naturels">
+            </div>
+        </div>
+
+        <!-- Contrôles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- Texte centré sur le carrousel -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center bg-dark bg-opacity-75">
+        <div class="text-center p-4">
+            <h1 class="display-6 fw-bold">Owendo, une commune en mouvement</h1>
+            <p class="mt-2">Bienvenue à Owendo – Votre ville, votre avenir.</p>
+            <a href="demarches.html" class="btn btn-success mt-3">Effectuer une démarche</a>
+        </div>
+    </div>
+</section>
+
+<!-- Section Body -->
+<section class="body">
+    <div class="container py-5">
+
+        <!-- Ligne avec Sidebar + Contenu -->
+        <div class="row">
+
+            <!-- Sidebar - Informations sur Owendo -->
+            <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+
+                <!-- Bloc 1 : Présentation -->
+                <div class="bg-light-blue p-3 rounded shadow-sm mb-4">
+                    <h6 class="text-primary">À propos</h6>
+                    <p class="small text-muted">Owendo est une commune urbaine située au nord de Libreville, chef-lieu de la province de l’Estuaire. C’est un centre économique majeur grâce à son port.</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary w-100">En savoir +</a>
+                </div>
+
+                <!-- Bloc 2 : Histoire -->
+                <div class="bg-light-blue p-3 rounded shadow-sm mb-4">
+                    <h6 class="text-primary">Histoire</h6>
+                    <p class="small text-muted">Ancien village côtier, Owendo a connu un développement rapide grâce à la construction du port autonome, devenant ainsi un poumon économique du Gabon.</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary w-100">En savoir +</a>
+                </div>
+
+                <!-- Bloc 3 : Économie -->
+                <div class="bg-light-blue p-3 rounded shadow-sm mb-4">
+                    <h6 class="text-primary">Économie</h6>
+                    <p class="small text-muted">Port principal du Gabon, Owendo abrite des industries agroalimentaires, logistiques et un secteur tertiaire dynamique.</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary w-100">En savoir +</a>
+                </div>
+
+                                <!-- Bloc 5 : Économie -->
+                <div class="bg-light-blue p-3 rounded shadow-sm mb-4">
+                    <h6 class="text-primary">Enquête citoyenne sur le vélo</h6>
+                    <p class="small text-muted">Que vous soyez cycliste régulier, occasionnel ou même non-cycliste, le Baromètre vélo vous permet d’évaluer les conditions de circulation à vélo dans votre commune. En quelques minutes, vous pouvez donner votre avis sur le confort et la sécurité du vélo dans votre ville. Vous avez jusqu'au 2 juin !</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary w-100">En savoir +</a>
+                </div>
+
+                                <!-- Bloc 5 : Économie -->
+                <div class="bg-light-blue p-3 rounded shadow-sm mb-4">
+                    <h6 class="text-primary">Culture</h6>
+                    <p class="small text-muted">Les Célestins, Théâtre d'Owendo dévoileront leur saison 2025-2026 ce samedi 24 mai dès 13h30 et organisent une grande fête pour l’occasion ! </p>
+                    <a href="#" class="btn btn-sm btn-outline-primary w-100">En savoir +</a>
+                </div>
+
+                <!-- Bouton Toutes les actualités -->
+                <div class="text-center mt-3">
+                    <a href="#" class="btn btn-secondary btn-sm w-100">Toutes les actualités</a>
+                </div>
+
+            </div>
+
+            <!-- Grille de cartes - Contenu principal -->
+            <div class="col-md-8 col-lg-9">
+
+                <!-- Encadré pratique -->
+                 <div class="container my-5">
+                    <div class="row justify-content-center">
+                        <!-- Colonne pour chaque icône et texte -->
+                        <div class="col-md-2 d-flex justify-content-center row">
+                            <div class="icon-circle">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <p class="icon-text">Écrire au Maire</p>
+                        </div>
+                        <div class="col-md-2  d-flex justify-content-center row">
+                            <div class="icon-circle">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <p class="icon-text">Allô Mairie!</p>
+                        </div>
+                        <div class="col-md-2  d-flex justify-content-center row">
+                            <div class="icon-circle">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <p class="icon-text">Infos pratiques</p>
+                        </div>
+                        <div class="col-md-2  d-flex justify-content-center row">
+                            <div class="icon-circle">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="icon-text">Adresses utiles</p>
+                        </div>
+                        <div class="col-md-2  d-flex justify-content-center row">
+                            <div class="icon-circle">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <p class="icon-text">Offres d'emplois</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Alerte infos -->               
+                <div class="container my-5">
+                    <h2 class="text-center text-primary mb-4">Alerte Infos</h2>
+
+                    <div class="row g-4 justify-content-center">
+
+                        <!-- Carte 1 -->
+                        <div class="col-md-6 col-lg-4">
+                        <div class="card alerte-card h-100 position-relative">
+                            <div class="bg-light-blue">
+                                <img src="images/undraw_adventure-map_3e4p.svg"  alt="Image de l'alerte" class="card-img-top ">
+                            </div>
+                            <span class="badge bg-danger alerte-badge">URGENT</span>
+                            <div class="card-body">
+                            <h5 class="card-title">Titre de l’information importante</h5>
+                            <p class="card-text text-muted">Un court résumé de l’alerte ou de l’information à communiquer aux citoyens.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Lire</a>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Carte 2 -->
+                        <div class="col-md-6 col-lg-4">
+                        <div class="card alerte-card h-100 position-relative">
+                            <div class="bg-light-blue">
+                                <img src="images/undraw_apartment-rent_oodr.svg"  alt="Image de l'alerte" class="card-img-top">
+                            </div>
+                            <span class="badge bg-warning text-dark alerte-badge">INFO</span>
+                            <div class="card-body">
+                            <h5 class="card-title">Nouvelle circulaire municipale</h5>
+                            <p class="card-text text-muted">Détails concernant une nouvelle mesure ou décision prise par la mairie.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Lire</a>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Carte 3 -->
+                        <div class="col-md-6 col-lg-4">
+                        <div class="card alerte-card h-100 position-relative">
+                            <div class="bg-light-blue">
+                                <img src="images/undraw_order-a-car_x5mq.svg"  alt="Image de l'alerte" class="card-img-top">
+                            </div>
+                            <span class="badge bg-success alerte-badge">OK</span>
+                            <div class="card-body">
+                            <h5 class="card-title">Situation résolue - Résumé</h5>
+                            <p class="card-text text-muted">Une situation urgente a été résolue. Voici les détails de l'intervention.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Lire</a>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+
+               <!-- Sections rapides -->
+                <div class="container my-5">
+                    <h2 class="text-center text-primary mb-4">Qui êtes-vous ?</h2>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4">
+                            <a href="#" class="card text-center p-3 text-decoration-none border rounded shadow-sm">
+                                <i class="fas fa-users fa-2x text-success mb-2"></i>
+                                <small>Parent</small>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <a href="#" class="card text-center p-3 text-decoration-none border rounded shadow-sm">
+                                <i class="fas fa-street-view fa-2x text-success mb-2"></i>
+                                <small>Senior</small>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <a href="#" class="card text-center p-3 text-decoration-none border rounded shadow-sm">
+                                <i class="fas fa-wheelchair fa-2x text-success mb-2"></i>
+                                <small>Handicapé</small>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <a href="#" class="card text-center p-3 text-decoration-none border rounded shadow-sm">
+                                <i class="fas fa-briefcase fa-2x text-success mb-2"></i>
+                                <small>Professionnel</small>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <a href="#" class="card text-center p-3 text-decoration-none border rounded shadow-sm">
+                                <i class="fas fa-child fa-2x text-success mb-2"></i>
+                                <small>Jeune</small>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <a href="#" class="card text-center p-3 text-decoration-none border rounded shadow-sm">
+                                <i class="fas fa-users-cog fa-2x text-success mb-2"></i>
+                                <small>Association</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Démarches administratives -->
+                <div class="container my-5">
+                    <h2 class="text-center text-primary mb-4">Démarches en ligne</h2>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-3">
+                            <a href="#" class="card text-center p-3 text-decoration-none bg-light-blue border small text-mutedrounded shadow-sm text-primary">
+                                <i class="fas fa-id-card fa-2x mb-2"></i>
+                                <small>Carte d'identité</small>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a href="#" class="card text-center p-3 text-decoration-none bg-light-blue border small text-mutedrounded shadow-sm text-primary">
+                                <i class="fas fa-money-check-alt fa-2x mb-2"></i>
+                                <small>Avis des sommes à payer</small>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a href="#" class="card text-center p-3 text-decoration-none bg-light-blue border small text-mutedrounded shadow-sm text-primary">
+                                <i class="fas fa-video fa-2x mb-2"></i>
+                                <small>Autorisation de tournage</small>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a href="#" class="card text-center p-3 text-decoration-none bg-light-blue border small text-mutedrounded shadow-sm text-primary">
+                                <i class="fas fa-file-contract fa-2x mb-2"></i>
+                                <small>Copie certifiée conforme</small>
+                            </a>
+                        </div>
+                        <!-- Plus de démarches ici -->
+                    </div>
+                </div>
+
+                <div class="container my-5">
+                    <h2 class="text-center text-primary mb-4">Accès rapides</h2>
+
+                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4 justify-content-center">
+
+                    <!-- Agenda TLMD -->
+                    <div class="col text-center">
+                        <div class="card border rounded-4 shadow-sm h-100">
+                        <div class="card-body d-flex flex-column align-items-center p-3">
+                            <i class="bi bi-calendar-event display-6 text-primary mb-2"></i>
+                            <span class="small">Agenda TLMD</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- État civil --> 
+                    <div class="col text-center">
+                        <div class="card border rounded-4 shadow-sm h-100">
+                        <div class="card-body d-flex flex-column align-items-center p-3">
+                            <i class="bi bi-journal-text display-6 text-danger mb-2"></i>
+                            <span class="small">État civil</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- La mairie recrute -->
+                    <div class="col text-center">
+                        <div class="card border rounded-4 shadow-sm h-100">
+                        <div class="card-body d-flex flex-column align-items-center p-3">
+                            <i class="bi bi-building display-6 text-warning mb-2"></i>
+                            <span class="small">La mairie recrute</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Maisons médicales -->
+                    <div class="col text-center">
+                        <div class="card border rounded-4 shadow-sm h-100">
+                        <div class="card-body d-flex flex-column align-items-center p-3">
+                            <i class="bi bi-hospital display-6 text-success mb-2"></i>
+                            <span class="small">Maisons médicales</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Parcs et jardins -->
+                    <div class="col text-center">
+                        <div class="card border rounded-4 shadow-sm h-100">
+                        <div class="card-body d-flex flex-column align-items-center p-3">
+                            <i class="bi bi-trees display-6 text-secondary mb-2"></i>
+                            <span class="small">Parcs et jardins</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Patinoires -->
+                    <div class="col text-center">
+                        <div class="card border rounded-4 shadow-sm h-100">
+                        <div class="card-body d-flex flex-column align-items-center p-3">
+                            <i class="bi bi-ice-half display-6 text-info mb-2"></i>
+                            <span class="small">Patinoires</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Pharmacies -->
+                    <div class="col text-center">
+                        <div class="card border rounded-4 shadow-sm h-100">
+                        <div class="card-body d-flex flex-column align-items-center p-3">
+                            <i class="bi bi-prescription display-6 text-dark mb-2"></i>
+                            <span class="small">Pharmacies</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Piscines -->
+                    <div class="col text-center">
+                        <div class="card border rounded-4 shadow-sm h-100">
+                        <div class="card-body d-flex flex-column align-items-center p-3">
+                            <i class="bi bi-water display-6 text-primary mb-2"></i>
+                            <span class="small">Piscines</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+                <!-- Actualités -->
+                <div class="container my-5">
+                    <h2 class="text-center text-primary  mb-4">Actualités</h2>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-4">
+                            <div class="card shadow-sm">
+                                <img src="images/actu1.jpg" class="card-img-top" alt="Article 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nouveau marché hebdomadaire</h5>
+                                    <p class="card-text">Un nouveau marché ouvre ses portes chaque samedi matin.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Lire plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card shadow-sm">
+                                <img src="images/actu2.jpg" class="card-img-top" alt="Article 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Travaux route principale</h5>
+                                    <p class="card-text">Des travaux auront lieu du 1er au 15 avril sur la route principale.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Lire plus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card shadow-sm">
+                                <img src="images/actu3.jpg" class="card-img-top" alt="Article 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Festival culturel annuel</h5>
+                                    <p class="card-text">Le festival aura lieu du 20 au 25 avril prochain.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Lire plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white p-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 mb-3">
+                <strong>Mairie d'Owendo</strong><br>
+                Avenue de la République<br>
+                Province de l'Estuaire, Gabon<br>
+                Horaires : Lundi à Vendredi - 8h à 17h<br>
+                Téléphone : +241 XX XX XX XX<br>
+                Email : contact@mairieowendo.ga
+            </div>
+            <div class="col-12 col-md-3 mb-3">
+                <strong>Liens utiles</strong><br>
+                <ul class="list-unstyled small">
+                    <li><a href="mentions-legales.html" class="text-white text-decoration-none">Mentions légales</a></li>
+                    <li><a href="plan-site.html" class="text-white text-decoration-none">Plan du site</a></li>
+                    <li><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <strong>Suivez-nous</strong>
+                <div class="d-flex gap-2 fs-5 mb-3">
+                    <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+                <h6 class="small">Rejoignez notre newsletter</h6>
+                <form class="input-group input-group-sm mb-3">
+                    <input type="email" class="form-control" placeholder="Votre email" required>
+                    <button class="btn btn-success" type="submit">S’inscrire</button>
+                </form>
+            </div>
+        </div>
+        <hr class="text-white">
+        <div class="text-center">
+            <p class="small mb-0">&copy; 2025 Mairie d'Owendo – Tous droits réservés</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
